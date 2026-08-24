@@ -98,6 +98,8 @@ Part B
 
 Part C
 
+# コンフリクトブロック
+
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % cat recipes.txt
 
        <<<<<<< HEAD
@@ -105,3 +107,16 @@ Part C
        =======
        EXTRA SPICY
        >>>>>>> spicy-version
+
+#グラフ
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline --graph -6
+
+       *   f12045f (HEAD -> kitchen/DaichiMatsu) Merge branch 'spicy-version' into kitchen/DaichiMatsu
+       |\  
+       | * bb96a4c (spicy-version) feat: make curry extra spicy
+       * | 90dabb7 feat: make curry mild
+       |/  
+       * c46451d feat: improve curry recipe
+       * 88d1a8a feat: add ramen recipe
+       * 51c5903 feat: add katsudon recipe
