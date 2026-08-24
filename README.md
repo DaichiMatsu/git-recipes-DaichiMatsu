@@ -15,6 +15,6 @@ git-recipes-DaichiMatsu　% find .git/objects -type f | wc -l
 
 git-recipes-DaichiMatsu　% ls -a
 
-              .		..		.git		README.md
+       .		..		.git		README.md
 
 上の実行結果からも分かる通り、git-recipes-DaichiMatsuの中には".git"と"README.md"の二つのファイルが存在するから
