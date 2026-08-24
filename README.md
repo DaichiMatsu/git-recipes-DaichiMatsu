@@ -31,3 +31,10 @@ A2.
 
        # ブランチのファイルの中身
        1a1135b781f06b66049169b3ea2ce55a739c01a3
+
+A3.
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git cat-file -p HEAD^{tree}
+
+       # treeにはREADME.mdファイルのみが並んでいる
+       100644 blob a6823fc44dcc90b4c8cd22c58dc96cbe47bc0675	README.md
