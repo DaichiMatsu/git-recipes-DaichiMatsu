@@ -32,9 +32,55 @@ A2.
        # ブランチのファイルの中身
        1a1135b781f06b66049169b3ea2ce55a739c01a3
 
+
 A3.
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git cat-file -p HEAD^{tree}
 
        # treeにはREADME.mdファイルのみが並んでいる
        100644 blob a6823fc44dcc90b4c8cd22c58dc96cbe47bc0675	README.md
+
+
+A4.
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline | tail -1
+
+       1a1135b Initial commit
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git checkout 1a1135b && cat .git/HEAD
+Note: switching to '1a1135b'.
+
+       You are in 'detached HEAD' state. You can look around, make experimental
+       
+       changes and commit them, and you can discard any commits you make in this
+       
+       state without impacting any branches by switching back to a branch.
+
+       <br>
+       If you want to create a new branch to retain commits you create, you may
+       do so (now or later) by using -c with the switch command. Example:
+
+       <br>
+         git switch -c <new-branch-name>
+
+       <br>
+       Or undo this operation with:
+
+       <br>
+         git switch -
+
+       <br>
+       Turn off this advice by setting config variable advice.detachedHead to false
+
+       <br>
+       HEAD is now at 1a1135b Initial commit
+       
+       1a1135b781f06b66049169b3ea2ce55a739c01a3
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git checkout -b rescue && git checkout kitchen/DaichiMatsu && git branch -d rescue
+
+       Switched to a new branch 'rescue'
+       
+       Switched to branch 'kitchen/DaichiMatsu'
+       
+       Deleted branch rescue (was 1a1135b).
