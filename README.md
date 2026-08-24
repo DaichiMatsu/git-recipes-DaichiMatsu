@@ -79,9 +79,18 @@ Note: switching to '1a1135b'.
 
 Part B
 
+#　統合前
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline -n 4
-
+       
        e1bd5d0 (HEAD -> kitchen/DaichiMatsu) final2
        de43a10 oops
        3162239 fix
        ebf14b0 aaa
+
+#　統合後
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline -n 4
+
+       c46451d (HEAD -> kitchen/DaichiMatsu) feat: improve curry recipe
+       88d1a8a feat: add ramen recipe
+       51c5903 feat: add katsudon recipe
+       0aa0710 feat: add curry recipe
