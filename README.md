@@ -26,6 +26,8 @@ A2.
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % cat .git/HEAD && cat .git/refs/heads/kitchen/DaichiMatsu    
 
+       # .git/HEADの中身
        ref: refs/heads/kitchen/DaichiMatsu
 
+       # ブランチのファイルの中身
        1a1135b781f06b66049169b3ea2ce55a739c01a3
