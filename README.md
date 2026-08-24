@@ -94,3 +94,14 @@ Part B
        88d1a8a feat: add ramen recipe
        51c5903 feat: add katsudon recipe
        0aa0710 feat: add curry recipe
+
+
+Part C
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % cat recipes.txt
+
+       <<<<<<< HEAD
+       MILD
+       =======
+       EXTRA SPICY
+       >>>>>>> spicy-version
