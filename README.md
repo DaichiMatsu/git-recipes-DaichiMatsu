@@ -74,3 +74,14 @@ Note: switching to '1a1135b'.
        Switched to a new branch 'rescue'
        Switched to branch 'kitchen/DaichiMatsu'
        Deleted branch rescue (was 1a1135b).
+
+
+
+Part B
+
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline -n 4
+
+       e1bd5d0 (HEAD -> kitchen/DaichiMatsu) final2
+       de43a10 oops
+       3162239 fix
+       ebf14b0 aaa
