@@ -7,7 +7,7 @@ A1.
 
 ファイル数:
 
-git-recipes-DaichiMatsu　% find .git/objects -type f | wc -l     
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % find .git/objects -type f | wc -l         
 
        2
 
@@ -15,7 +15,7 @@ git-recipes-DaichiMatsu　% find .git/objects -type f | wc -l
 
 ファイル数がゼロでない理由:
 
-git-recipes-DaichiMatsu　% ls -a
+(base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % ls -a
 
        .		..		.git		README.md
 
