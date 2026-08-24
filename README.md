@@ -1,11 +1,11 @@
 # git-recipes-DaichiMatsu
 エンピット
 
-Part A
+# Part A
 
-A1. 
+## A1. 
 
-ファイル数:
+### ファイル数:
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % find .git/objects -type f | wc -l         
 
@@ -13,7 +13,7 @@ A1.
 
 上の実行結果よりファイル数は2
 
-ファイル数がゼロでない理由:
+### ファイル数がゼロでない理由:
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % ls -a
 
@@ -22,7 +22,7 @@ A1.
 上の実行結果からも分かる通り、git-recipes-DaichiMatsuの中には".git"と"README.md"の二つのファイルが存在するから
 
 
-A2.
+## A2.
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % cat .git/HEAD && cat .git/refs/heads/kitchen/DaichiMatsu    
 
@@ -33,7 +33,7 @@ A2.
        1a1135b781f06b66049169b3ea2ce55a739c01a3
 
 
-A3.
+## A3.
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git cat-file -p HEAD^{tree}
 
@@ -41,7 +41,7 @@ A3.
        100644 blob a6823fc44dcc90b4c8cd22c58dc96cbe47bc0675	README.md
 
 
-A4.
+## A4.
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline | tail -1
 
@@ -77,9 +77,9 @@ Note: switching to '1a1135b'.
 
 
 
-Part B
+# Part B
 
-#統合前
+### 統合前
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline -n 4
        
        e1bd5d0 (HEAD -> kitchen/DaichiMatsu) final2
@@ -87,7 +87,7 @@ Part B
        3162239 fix
        ebf14b0 aaa
 
-#統合後
+### 統合後
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline -n 4
 
        c46451d (HEAD -> kitchen/DaichiMatsu) feat: improve curry recipe
@@ -96,9 +96,9 @@ Part B
        0aa0710 feat: add curry recipe
 
 
-Part C
+# Part C
 
-#コンフリクトブロック
+### コンフリクトブロック
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % cat recipes.txt
 
@@ -108,7 +108,7 @@ Part C
        EXTRA SPICY
        >>>>>>> spicy-version
 
-#グラフ
+### グラフ
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline --graph -6
 
@@ -122,9 +122,9 @@ Part C
        * 51c5903 feat: add katsudon recipe
 
 
-Part D
+# Part D
 
-#異なる二つのSHA
+## 異なる二つのSHA
 
 (base) daichi.matsumoto@matsumotodaichinoMacBook-Air git-recipes-DaichiMatsu % git log --oneline -n 1
 
@@ -136,6 +136,6 @@ Part D
        #kitchenブランチ
        70340d5 (HEAD -> kitchen/DaichiMatsu) feat: add cake recipe
 
-#SHAが異なる理由
+## SHAが異なる理由
 
 SHAはコミットする日時などで値が決まるため、変更内容が同じ場合でもSHAの値は異なることがある
